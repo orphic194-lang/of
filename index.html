@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afghan Proverbs</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Afghan Proverbs</h1>
+    <p>Illustrated Wisdom Wall</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Proverb Gallery</a></li>
+        <li><a href="#day">Proverb of the Day</a></li>
+        <li><a href="#wallSection">Interactive Wall</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</nav>
+
+<section  id="home" class="welcome">
+    <h2>Welcome to Afghan Proverbs</h2>
+    <p>Afghan proverbs reflect centuries of wisdom.</p>
+
+    <input type="text" id="search" placeholder="Search proverbs...">
+</section>
+
+<section id="gallery" class="proverbs">
+    <h3>Featured Proverbs</h3>
+
+    <div class="card">
+        <p class="dari">با صبر ترش شیرین می‌شود</p>
+        <p class="eng">With patience, the sour turns sweet.</p>
+    </div>
+
+    <div class="card">
+        <p class="dari">یک دست صدا ندارد</p>
+        <p class="eng">One hand makes no sound.</p>
+    </div>
+</section>
+
+<section id="gallery">
+    <h3>Proverb Gallery</h3>
+
+    <div class="card">
+        <p class="dari">هر که بامش بیش برفش بیشتر</p>
+        <p class="eng">The higher your roof, the more snow it collects.</p>
+    </div>
+</section>
+
+<section id="day" class="day">
+    <h3>Proverb of the Day</h3>
+    <p id="dailyDari"></p>
+    <p id="dailyEng"></p>
+</section>
+
+<section id="wallSection" class="interactive">
+    <h3>Interactive Wall</h3>
+
+    <input type="text" id="name" placeholder="Your name">
+    <textarea id="proverbInput" placeholder="Write your proverb..."></textarea>
+    <button onclick="addProverb()">Submit</button>
+
+    <div id="wall"></div>
+</section>
+
+<section id="about">
+    <h3>About</h3>
+    <p>Afghan proverbs share wisdom and culture.</p>
+</section>
+
+<footer>
+    <p>© 2025 Afghan Proverbs</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
